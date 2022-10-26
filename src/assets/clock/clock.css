@@ -1,0 +1,38 @@
+.clock{
+    height : 150px;
+    width: 150px;
+    background-image: url(../../../images/massimiliano-morosinotto-3i5PHVp1Fkw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px gold;
+    position: relative;
+}
+.hand{
+    position: absolute;
+    height : 3px;
+    border-radius: 2px;
+    background-color: black;
+    transform-origin: 100%;
+     transform: rotate(90deg);
+     transition: all 0.05;
+}
+.sec-hand{
+    margin-left: 20%;
+    /* background-color: gold; */
+    width: 30%  ;
+   
+}
+.min-hand{
+    width: 43%;
+    margin-left: 7%;
+    
+}
+.hour-hand{
+    width: 47%;
+    margin-left: 3%;
+    
+}

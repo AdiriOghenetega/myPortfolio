@@ -1,0 +1,53 @@
+.intro__container{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 1em 2em;
+    gap: 1em;
+    float: right;
+}
+.intro__img img{
+    border-radius: 10px;
+}
+.intro__writeup{
+    width: 300px;
+    /* text-align: right; */
+    color: gray;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.intro__writeup a{
+    color: gold;
+    text-decoration: none;
+    
+}
+.intro__writeup button{
+    position: relative;
+    border: 2px solid white;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: gold;
+    width: 250px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 5px;
+    opacity: .5;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transition: .3s;
+    }
+    
+    .intro__writeup button:hover{
+    border: 2px solid #104F55;
+    background-color: rgba(365,365,365,0.5);
+    cursor: pointer;
+    color: #104F55;
+    opacity: .8;
+    transition: .3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    

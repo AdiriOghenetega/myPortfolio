@@ -1,0 +1,14 @@
+.about__container{
+    color: white;
+    padding: 2em 2em;
+    display: flex;
+    align-items:center;
+    gap: 2em;
+}
+.about__img img{
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px gold ;
+}
+.about__writeup{
+    width: 700px;
+}

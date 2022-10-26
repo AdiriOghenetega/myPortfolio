@@ -1,0 +1,18 @@
+.projects__container{
+    color: white;
+    padding: 2em 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.projects__media video{
+    border-radius: 1em;
+}
+.projects__description a{
+    text-decoration: none;
+    color: gold;
+}
+.projects__description_links{
+    display: flex;
+    flex-direction: column;
+}
