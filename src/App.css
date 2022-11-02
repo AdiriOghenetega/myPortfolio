@@ -1,24 +1,22 @@
-#root {
-  max-width: 1280px; 
-  width: 100%;
-
-}
-body {
+.App {
+  
   margin: 0;
   font-weight: 100;
   background: radial-gradient(black,#0e0e0d); 
    background-image: url(../images/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
-  /* background-color: black; */
-  overflow-y: scroll;
+  padding:2em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   overflow-x: hidden;
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
-  
+
 }
 
 

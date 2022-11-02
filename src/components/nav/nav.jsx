@@ -12,10 +12,10 @@ const Navbar = () => {
    "Quizify","Tenzies","Tic-tac-toe","DrumKit"
   ])
   const [toolList,setToolList] = useState([
-   "Meme-Generator","Video-Player","Canvas","Clock","Search-engine","Gallery app"
+   "Picture-quote Generator","Video-Player","Canvas","Clock","Search-engine","Gallery app"
   ])
   const [websiteList,setWebsiteList] = useState([
-   "Airbnb Experiences page","Digital business card","Hcue-Restaurant"
+   "Loop Studio","Digital business card","Hcue-Restaurant"
   ])
 
   const [showGames,setShowGames]= useState(false)
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Clock /> 
         </div>
         <div className="navbar__links">
-        <div onMouseOver={handleShowGames} onMouseLeave={handleHideGames}><Link to="/components/games/games">Games</Link>
+        <div className="navbar__links_games" onMouseOver={handleShowGames} onMouseLeave={handleHideGames}><Link to="/components/games/games">Games</Link>
         <div >{showGames && gameList.map((game,index)=>{
           return <Panels key={index} path="/components/games/games" project={game} />
         })}</div>

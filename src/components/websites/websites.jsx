@@ -6,11 +6,11 @@ const Websites = (props) => {
   return (
     <div>
         <Projects
-        name="Airbnb Experiences page"
+        name="Loop Studio"
         description = "A very useful website"
-        media="../../../videos/Digitalbusinesscard_site-preview.mp4"
-        url="https://digitalcard100.netlify.app/"
-        giturl="https://github.com/AdiriOghenetega/Digital-business-card.git"
+        media="../../../videos/loopstudio.mp4"
+        url="https://staticstudio.netlify.app/"
+        giturl="https://github.com/AdiriOghenetega/Loop_studios.git"
          />
         <Projects
         name="Digital business card"

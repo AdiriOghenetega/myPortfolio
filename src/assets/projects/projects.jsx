@@ -3,9 +3,9 @@ import "./projects.css"
 
 const Projects = (props) => {
   return (
-    <div className="projects__container" >
+    <div className="projects__container"  >
         <div className="projects__media">
-        <video src={props.media} height="250px" width="250px" controls/>
+        <video src={props.media} height="250px" width="400px" controls/>
         </div>
         <div className="projects__description">
         <h1>{props.name}</h1>

@@ -1,7 +1,7 @@
 .panels__container{
     position: relative;
    max-width: 150px;
-   
+   z-index: 2;
    height:fit-content;
 } 
 .panels__container ul li{

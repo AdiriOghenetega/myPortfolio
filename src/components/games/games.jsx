@@ -13,9 +13,9 @@ const Games = () => {
          />
         <Projects 
         name="Tenzies"
-        media="../../../images/test_photo.jpeg" description="enjoy this game"
-        url="https/www.games.com"
-        giturl=""
+        media="../../../videos/Tenzies.mp4" description="enjoy this game"
+        url="https://mytenzies-game.netlify.app/"
+        giturl="https://github.com/AdiriOghenetega/Tenzies_Game.git"
          />
         <Projects 
         name="Tic-tac-toe"
@@ -25,9 +25,9 @@ const Games = () => {
          />
         <Projects 
         name="DrumKit"
-        media="../../../images/test_photo.jpeg" description="enjoy this game"
-        url="https/www.games.com"
-        giturl=""
+        media="../../../videos/drumkit.mp4" description="enjoy this game"
+        url="https://drumkit3000.netlify.app/"
+        giturl="https://github.com/AdiriOghenetega/Drumkit.git"
          />
     </div>
   )
