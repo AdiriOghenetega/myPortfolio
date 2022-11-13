@@ -12,10 +12,12 @@
 }
 .intro__writeup{
     width: 300px;
-    /* text-align: right; */
     color: gray;
     display: flex;
     flex-direction: column-reverse;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
 }
 .intro__writeup a{
     color: gold;
@@ -49,5 +51,15 @@
     opacity: .8;
     transition: .3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    bold{
+        color: gold;
+    }
+    @media only screen and (max-width: 425px){
+        .intro__writeup button{
+            width: 150px;
+            font-size: 1.3em;
+            height: 45px;
+        }
     }
     

@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useState,useRef } from "react";
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
 import { AiFillInstagram,AiOutlineTwitter } from "react-icons/ai";
 import "./contact.css";
@@ -23,6 +24,25 @@ const Contact = () => {
       };
     });
   }
+
+  const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const templateID =import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const publicApi = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicApi)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
   return (
     <div className="contact__container">
       <div className="contact__info">
@@ -53,7 +73,7 @@ const Contact = () => {
       </div>
       <fieldset>
         <legend>CONTACT ME</legend>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="contact__form_first-lastname">
             <div className="contact__form_firstname">
               <label of="firstname">FIRSTNAME </label>

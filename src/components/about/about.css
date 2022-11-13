@@ -4,11 +4,26 @@
     display: flex;
     align-items:center;
     gap: 2em;
+   height: 100%;
 }
 .about__img img{
     border-radius: 1em;
     box-shadow: 2px 2px 2px 2px gold ;
 }
 .about__writeup{
-    width: 700px;
+    width: 60%;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+bold{
+    color: gold;
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .about__container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
 }

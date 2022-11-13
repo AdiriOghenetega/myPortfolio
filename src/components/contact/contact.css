@@ -4,8 +4,6 @@
     justify-content: space-around ;
     align-items: center;
     padding : 2em 6em ;
-    
-    
 }
 .contact__info{
     display: flex;
@@ -16,11 +14,13 @@
    justify-content: center;
    align-items: left;
    margin: none;
+   
 }
 .contact__details{
     display: flex;
     gap: 2em;
     margin-top: 1em;
+    
 }
 .contact__info_title{
     font-size: 8px;
@@ -71,14 +71,10 @@
     flex-direction: row;
     gap: 2em;
     align-items : center ;
-    
-    
 }
 .contact__form_first-lastname div{
     display: flex;
     flex-direction: column;
-    
-   
 }
 .contact__form_firstname input{
     height: 20px ;
@@ -99,8 +95,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-bottom: 0.5em;
-    padding-left: 3em;
+    padding: 2em;
     Width : 100%;
+    font-size: 12px;
 }
 .contact__container form div{
     padding: 1em 0;
@@ -128,4 +125,33 @@
    font-weight: 700;
    background-color: gold;
    color : black;
+   cursor: pointer;
+}
+.contact__form_submit:hover{
+    box-shadow:  0 8px 16px 0 rgba(213, 209, 209, 0.2);
+    border: 1px solid white;
+    background-color: transparent;
+    color: gold;
+}
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .contact__container{
+        padding: 1em 1em;;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contact__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1em 1.5em;
+       
+    }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .contact__form_first-lastname{
+        flex-direction: column;
+    }
+    
 }
