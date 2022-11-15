@@ -4,6 +4,7 @@
     justify-content: space-around ;
     align-items: center;
     padding : 2em 6em ;
+    height: 100%;
 }
 .contact__info{
     display: flex;
@@ -18,9 +19,9 @@
 }
 .contact__details{
     display: flex;
-    gap: 2em;
+   justify-content: space-between;
     margin-top: 1em;
-    
+    width: 12.5em;
 }
 .contact__info_title{
     font-size: 8px;
@@ -31,7 +32,7 @@
 .contact__details_icons{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: space-between;
 }
 .contact__details_icons .map{
     color: red;
@@ -52,7 +53,8 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: space-between;
+    height: 10em;
 }
 .contact__container fieldset{
     display: flex;
@@ -69,7 +71,8 @@
 .contact__form_first-lastname{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    justify-content: space-between;
+    width: 100%;
     align-items : center ;
 }
 .contact__form_first-lastname div{
@@ -78,9 +81,11 @@
 }
 .contact__form_firstname input{
     height: 20px ;
+    width: 80%;
 }
 .contact__form_lastname input{
     height: 20px;
+    width: 80%;
 }
 .contact__form_email{
     display: flex;
@@ -96,7 +101,7 @@
     justify-content: flex-start;
     padding-bottom: 0.5em;
     padding: 2em;
-    Width : 100%;
+    width : 100%;
     font-size: 12px;
 }
 .contact__container form div{
@@ -136,7 +141,7 @@
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
     .contact__container{
-        padding: 1em 1em;;
+        padding: 1em 1em;
     }
 }
 @media only screen and (max-width: 600px){
@@ -145,13 +150,29 @@
         justify-content: center;
         align-items: flex-start;
         padding: 1em 1.5em;
-       
+       height: auto;
+    }
+    fieldset:nth-child(2) {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
     .contact__form_first-lastname{
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
-    
+    .contact__form_firstname input{
+        width: 100%;
+    }
+    .contact__form_lastname input{
+        width: 100%;
+    }
+    .contact__container{
+        padding: 0.5em;
+    }
+    fieldset:nth-child(2) {
+        width: 85%;
+    }
 }

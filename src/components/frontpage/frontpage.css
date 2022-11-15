@@ -8,12 +8,12 @@
 }
 .header{
     position: relative;
-    padding: 0 0.5em;
+    padding: 0 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     color: white;
     font-size: 2em;
-    width: 100%;
+    width: 90%;
     }
     
     .frontpage__fading-text{
@@ -90,12 +90,18 @@
      @media only screen and (max-width: 600px){
         .frontpage__container{
             flex-direction: column;
+            height: auto;
         }
         .frontpage__fading-text{
             height: 16em;
         }
         .header{
             font-size: 1.2em;
+        }
+     }
+     @media only screen and (max-width: 325px){
+        .header{
+            font-size: 1em;
         }
      }
      

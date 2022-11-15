@@ -3,18 +3,24 @@
     padding: 2em 2em;
     display: flex;
     align-items:center;
-    gap: 2em;
+    justify-content:space-between;
+    width: 95% ;
    height: 100%;
+  
 }
 .about__img img{
     border-radius: 1em;
-    box-shadow: 2px 2px 2px 2px gold ;
+    box-shadow: 5px 2px 5px 2px rgb(239, 219, 73) ;
 }
 .about__writeup{
-    width: 60%;
+    width: 80%;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1px;
+    
+}
+.about__writeup p{
+    width : 60%
 }
 bold{
     color: gold;
@@ -25,5 +31,20 @@ bold{
         flex-direction: column;
         align-items: flex-start;
     }
-    
+    .about__writeup{
+        height: 55%;
+    }
+    .about__writeup p{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .about__img img{
+        height: 150px;
+        width: 100px;
+    }
+    .about__writeup{
+        height: 60%;
+    }
 }

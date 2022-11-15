@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <div className="intro__container">
     <div className="intro__img">
-    <img src="../../images/test_photo.jpeg" width="150px" height="200px"/>
+    <img src="../../images/myphoto.jpg" width="150px" height="200px"/>
     </div>
     <div className="intro__writeup">
         <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks.

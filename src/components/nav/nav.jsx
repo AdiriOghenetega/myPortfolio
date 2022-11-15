@@ -128,6 +128,21 @@ function showMyNestedDropDown(e){
   })
 }
 
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("navbar__links_bars-dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('showdropdown')) {
+        openDropdown.classList.remove('showdropdown');
+      }
+    }
+  }
+}
+
   return (
     <nav>
       <div className="navbar__container">
@@ -177,7 +192,7 @@ function showMyNestedDropDown(e){
           </Link>
         </div>
         <div className="navbar__links_bars-dropdown">
-       <FcMenu size="25px" onMouseDown={showMyDropdown} onMouseLeave={hideDropdown} />
+       <FcMenu className="dropbtn" size="30px" onMouseDown={showMyDropdown}  />
        <div className={`navbar__links_bars-dropdown-content ${showDropdown && "showdropdown"}`}>
        <div >
           <Link to="/">
@@ -185,31 +200,31 @@ function showMyNestedDropDown(e){
           </Link>
         </div>
        <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownGames}><Link name="games" to="/components/games/games">Games</Link></div>
+          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownGames}><Link className="dropbtn" name="games" to="/components/games/games">Games</Link></div>
           <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.games && "shownesteddropdown"}`}>
             <div>
               {gameList.map((game, index) => {
-                return <a href={`#${game.src}`} key={index}>{game.name}</a>;
+                return <a className="dropbtn" href={`#${game.src}`} key={index}>{game.name}</a>;
               })}
             </div>
           </div>
         </div>
         <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownTools}><Link name="tools" to="/components/tools/tools">Tools</Link></div>
+          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownTools}><Link className="dropbtn" name="tools" to="/components/tools/tools">Tools</Link></div>
           <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.tools && "shownesteddropdown"}`}>
             <div>
               {toolList.map((tool, index) => {
-                return <a href={`#${tool.src}`} key={index}>{tool.name}</a>;
+                return <a className="dropbtn" href={`#${tool.src}`} key={index}>{tool.name}</a>;
               })}
             </div>
           </div>
         </div>
         <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownWebsites}><Link name="websites" to="/components/websites/websites">Websites</Link></div>
+          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownWebsites}><Link className="dropbtn" name="websites" to="/components/websites/websites">Websites</Link></div>
           <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.websites && "shownesteddropdown"}`}>
             <div>
               {websiteList.map((website, index) => {
-                return <a href={`#${website.src}`} key={index}>{website.name}</a>;
+                return <a className="dropbtn" href={`#${website.src}`} key={index}>{website.name}</a>;
               })}
             </div>
           </div>
