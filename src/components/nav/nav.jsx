@@ -150,34 +150,12 @@ window.onclick = function(event) {
         <Clock />
       </div>
       <div className="navbar__links">
-        <div onMouseDown={handleShowNavDropdown} onMouseLeave={ handleExitDropDownGames} className="dropdown">
+        <div  className="dropdown">
+          <button className="dropdown__button" name="games" onMouseDown={handleShowNavDropdown} >Projects</button>
+          <div className={`dropdown-content rotate-center `}>
           <Link name="games" to="/components/games/games">Games</Link>
-          <div className={`dropdown-content rotate-center ${showNavDropDown.games && "shownavdropdown"}`}>
-            <div>
-              {gameList.map((game, index) => {
-                return <a href={`/components/games/games#${game.src}`} key={index}>{game.name}</a>;
-              })}
-            </div>
-          </div>
-        </div>
-        <div onMouseDown={handleShowNavDropdown} onMouseLeave={ handleExitDropDownTools} className="dropdown">
           <Link name="tools" to="/components/tools/tools">Tools</Link>
-          <div className={`dropdown-content rotate-center ${showNavDropDown.tools && "shownavdropdown"}`}>
-            <div>
-              {toolList.map((tool, index) => {
-                return <a href={`/components/tools/tools#${tool.src}`} key={index}>{tool.name}</a>;
-              })}
-            </div>
-          </div>
-        </div>
-        <div onMouseDown={handleShowNavDropdown} onMouseLeave={ handleExitDropDownWebsites} className="dropdown">
           <Link name="websites" to="/components/websites/websites">Websites</Link>
-          <div className={`dropdown-content rotate-center ${showNavDropDown.websites && "shownavdropdown"}`}>
-            <div>
-              {websiteList.map((website, index) => {
-                return <a href={`/components/websites/websites#${website.src}`} key={index}>{website.name}</a>;
-              })}
-            </div>
           </div>
         </div>
         <div className="dropdown">
@@ -192,43 +170,16 @@ window.onclick = function(event) {
           </Link>
         </div>
         <div className="navbar__links_bars-dropdown">
-       <FcMenu className="dropbtn" size="30px" onMouseDown={showMyDropdown}  />
+       <FcMenu className="dropbtn" size="30px" onPointerDown={showMyDropdown}  />
        <div className={`navbar__links_bars-dropdown-content ${showDropdown && "showdropdown"}`}>
-       <div >
+       <div>
           <Link to="/">
             <FcHome size="25px" />
           </Link>
         </div>
-       <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownGames}><Link className="dropbtn" name="games" to="/components/games/games">Games</Link></div>
-          <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.games && "shownesteddropdown"}`}>
-            <div>
-              {gameList.map((game, index) => {
-                return <a className="dropbtn" href={`#${game.src}`} key={index}>{game.name}</a>;
-              })}
-            </div>
-          </div>
-        </div>
-        <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownTools}><Link className="dropbtn" name="tools" to="/components/tools/tools">Tools</Link></div>
-          <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.tools && "shownesteddropdown"}`}>
-            <div>
-              {toolList.map((tool, index) => {
-                return <a className="dropbtn" href={`#${tool.src}`} key={index}>{tool.name}</a>;
-              })}
-            </div>
-          </div>
-        </div>
-        <div className="navbar__links_bars_nested-dropdown">
-          <div onClick={showMyNestedDropDown} onMouseLeave={ handleExitDropDownWebsites}><Link className="dropbtn" name="websites" to="/components/websites/websites">Websites</Link></div>
-          <div className={`navbar__links_bars_nested-dropdown-content ${showNestedDropdown.websites && "shownesteddropdown"}`}>
-            <div>
-              {websiteList.map((website, index) => {
-                return <a className="dropbtn" href={`#${website.src}`} key={index}>{website.name}</a>;
-              })}
-            </div>
-          </div>
-        </div>
+        <div><Link className="dropbtn" name="games" to="/components/games/games">Games</Link></div>
+        <div><Link className="dropbtn" name="tools" to="/components/tools/tools">Tools</Link></div>
+        <div><Link className="dropbtn" name="websites" to="/components/websites/websites">Websites</Link></div>
         <div >
           <Link to="/components/contact/contact">Contact</Link>
         </div>
