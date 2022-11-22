@@ -7,21 +7,50 @@
     height: 100%;
 }
 .contact__info{
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
-    padding-bottom: 5em;
    width: 27%;
    justify-content: center;
    align-items: left;
    margin: none;
-   
 }
+
 .contact__details{
     display: flex;
+    flex-direction: column;
    justify-content: space-between;
-    margin-top: 1em;
-    width: 12.5em;
+   align-items: center;
+   position: relative;
+   height: 8em;
+}
+.contact__details-literal{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    width: 12em;
+    position: relative;
+}
+.contact__details-socials{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items:center;
+    justify-content: space-between;
+}
+.insta{
+    color: #c0b6ab;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
+}
+.twitter{
+    color: blue;
+}
+.linkedin{
+    color: white;
+}
+.github{
+    color: white;
 }
 .contact__info_title{
     font-size: 8px;
@@ -43,18 +72,12 @@
 .contact__details_icons .email{
     color: white;
 }
-.contact__details_icons .insta{
-    color: rgb(170, 81, 81);
-}
-.contact__details_icons .twitter{
-    color: blue;
-}
 .contact__details-input{
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 10em;
+    height: 5em;
 }
 .contact__container fieldset{
     display: flex;
@@ -63,6 +86,7 @@
     width: 60%;
     background: transparent;
     color: white;
+    margin-top: 1em;
 }
 .contact__container fieldset legend{
     color: gold;

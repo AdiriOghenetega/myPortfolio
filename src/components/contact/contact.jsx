@@ -2,7 +2,7 @@ import React from "react";
 import emailjs from '@emailjs/browser';
 import { useState,useRef } from "react";
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
-import { AiFillInstagram,AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram,AiOutlineTwitter,AiFillLinkedin,AiFillGithub } from "react-icons/ai";
 import "./contact.css";
 
 const Contact = () => {
@@ -54,19 +54,24 @@ const Contact = () => {
           </legend>
 
           <div className="contact__details">
+          <div className="contact__details-literal">
             <div className="contact__details_icons">
               <MdLocationPin size="20px" className="map" />
               <MdPhone size="20px" className="phone" />
               <MdEmail size="20px" className="email" />
-              <AiFillInstagram size="20px" className="insta" />
-              <AiOutlineTwitter size="20px" className="twitter" />
             </div>
             <div className="contact__details-input">
               <span>Nigeria</span>
               <span>+2348142604385</span>
-              <span>tegaadiri3@yahoo.com</span>
-              <span>@thatcoderguy</span>
-              <span>@thatcoderguy</span>
+              <span>adiritega@gmail.com</span>
+            </div>
+          </div>
+          
+            <div className="contact__details-socials">
+            <a href="https://instagram.com/thatcoderguy.inc?igshid=YmMyMTA2M2Y=" target="blank"><AiFillInstagram size="20px" className="insta" /></a>
+            <a href="https://twitter.com/adiri_tega?t=tYACVBXxcjFscxCVd4dY5w&s=08" target="blank"><AiOutlineTwitter size="20px" className="twitter" /></a>
+            <a href="https://www.linkedin.com/in/adiri-oghenetega-33459b1a1" target="blank"><AiFillLinkedin size="20px" className="linkedin" /></a>  
+            <a href="https://github.com/AdiriOghenetega" target="blank"><AiFillGithub size="20px" className="github" /></a>  
             </div>
           </div>
         </fieldset>
