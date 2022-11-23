@@ -1,18 +1,36 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import { AiOutlineHtml5 } from "react-icons/ai";
+import {IoLogoCss3,IoLogoJavascript,IoLogoReact } from "react-icons/io5";
 import "./intro.css"
 
 const Intro = () => {
   return (
     <div className="intro__container">
-    <div className="intro__img">
+    {/* <div className="intro__img">
     <img src="../../images/myphoto.jpg" width="150px" height="200px"/>
-    </div>
+    </div> */}
     <div className="intro__writeup">
-        <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks.
-        <br/>I'm determined to contribute to global advancement by helping to solve real-live problems one code at a time.<br/>I have skills in : <bold>HTML</bold> , <bold>JQuery</bold>, <bold>CSS</bold> , <bold>SCSS</bold>, <bold>Javascript</bold> and <bold>Reactjs</bold>. I'm also familiar with methodologies like BEM , and i have basic knowledge of cloud computing. 
-</p>
-<Link to="/components/about/about"><button>Read more...</button></Link>
+        <h2>MY SKILLS</h2>
+        <div className="intro__writeup_skills-logo">
+          <div className="html">
+          <AiOutlineHtml5  size="25" />
+          <h3>HTML5</h3>
+          </div>
+          <div className="css">
+          <IoLogoCss3 size="25" />
+          <h3>CSS</h3>
+          </div>
+          <div className="js">
+          <IoLogoJavascript size="25" />
+          <h3>JAVASCRIPT</h3>
+          </div>
+          <div className="react">
+          <IoLogoReact size="25" />
+          <h3>REACTJS</h3>
+          </div>
+        </div>
+<Link to="/components/about/about"><button>More about me...</button></Link>
 
     </div>
 

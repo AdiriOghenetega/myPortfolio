@@ -76,7 +76,12 @@ nav {
   position: relative;
   cursor: pointer;
 }
-
+.navbar__links_bars-dropdown-btn{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 5.6em;
+}
 .navbar__links_bars-dropdown-content {
   display: none;
   position: absolute;

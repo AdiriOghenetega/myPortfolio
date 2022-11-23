@@ -170,16 +170,19 @@ window.onclick = function(event) {
           </Link>
         </div>
         <div className="navbar__links_bars-dropdown">
-       <FcMenu className="dropbtn" size="30px" onPointerDown={showMyDropdown}  />
+        <div className="navbar__links_bars-dropdown-btn" onPointerDown={showMyDropdown}>
+        <FcMenu size="30px" />
+        <h4>Projects</h4>
+        </div>
        <div className={`navbar__links_bars-dropdown-content ${showDropdown && "showdropdown"}`}>
        <div>
           <Link to="/">
             <FcHome size="25px" />
           </Link>
         </div>
-        <div><Link className="dropbtn" name="games" to="/components/games/games">Games</Link></div>
-        <div><Link className="dropbtn" name="tools" to="/components/tools/tools">Tools</Link></div>
-        <div><Link className="dropbtn" name="websites" to="/components/websites/websites">Websites</Link></div>
+        <div><Link name="games" to="/components/games/games">Games</Link></div>
+        <div><Link name="tools" to="/components/tools/tools">Tools</Link></div>
+        <div><Link name="websites" to="/components/websites/websites">Websites</Link></div>
         <div >
           <Link to="/components/contact/contact">Contact</Link>
         </div>

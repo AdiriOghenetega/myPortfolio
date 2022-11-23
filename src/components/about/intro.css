@@ -3,10 +3,10 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 1em 2em;
-    justify-content: space-between;
+    padding: 1em 0;
+    justify-content: space-around;
     float: right;
-    width: 40%;
+    width: 49%;
     height: auto;
 }
 .intro__img img{
@@ -17,15 +17,58 @@
     width: 300px;
     color: white;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1px;
 }
-.intro__writeup p{
-    width: 280px;
-    
+.intro__writeup_skills-logo{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 25em;
 }
+.html{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.html :nth-child(1){
+    color: rgb(220,74,37);
+}
+.css{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.css :nth-child(1){
+    color: rgb(38,77,228);
+}
+.js{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+   
+}
+.js :nth-child(1){
+    color: yellow;
+}
+.react{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.react :nth-child(1){
+    color: rgb(94,212,243);
+}
+
 .intro__writeup a{
     color: gold;
     text-decoration: none;
@@ -38,7 +81,7 @@
     color: gold;
     width: 250px;
     height: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     opacity: .5;
     bottom: 0px;
@@ -57,12 +100,9 @@
     transition: .3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
-    bold{
-        color: gold;
-    }
     @media only screen and (max-width: 1200px){
         .intro__container{
-            width: 48%;
+            width: 65%;
         }
         .intro__writeup p{
             width: 260px;
@@ -70,34 +110,39 @@
     }
     @media only screen and (max-width: 600px){
         .intro__container{
-            width: 86%;
+            width: 100%;
+        }
+        .intro__container{
+            flex-direction:column;
+        }
+        .intro__img img{
+            width: 120px;
+            height: 150px;
         }
     }
-    @media only screen and (max-width: 425px){
+    @media only screen and (max-width: 325px){
         .intro__writeup button{
             
-            width: 100px;
+            width: 120px;
             font-size: 1em;
             height: 35px;
         }
         .intro__container{
-            width: 87%;
+            width: 85%;
             padding: 1em 1em;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            height: 26em;
+            justify-content: flex-end;
+            align-items: center;
+            height: 15em;
         }
         .intro__writeup{
             flex-direction: column;
-            width: 80%;
+            align-items: center;
+            width: 70%;
         }
-        .intro__writeup p{
-            width: 95%;
+        .intro__writeup_skills-logo{
+            width: 22em;
         }
-        .intro__img img{
-            width: 100px;
-            height: 150px;
-        }
+        
     }
     
