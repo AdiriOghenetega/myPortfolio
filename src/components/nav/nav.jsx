@@ -172,7 +172,7 @@ window.onclick = function(event) {
         <div className="navbar__links_bars-dropdown">
         <div className="navbar__links_bars-dropdown-btn" onPointerDown={showMyDropdown}>
         <FcMenu size="30px" />
-        <h4>Projects</h4>
+        <h4>PROJECTS</h4>
         </div>
        <div className={`navbar__links_bars-dropdown-content ${showDropdown && "showdropdown"}`}>
        <div>

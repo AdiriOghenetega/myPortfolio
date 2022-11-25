@@ -80,7 +80,8 @@ nav {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  width: 5.6em;
+  font-size: 15px;
+  width: 7.4em;
 }
 .navbar__links_bars-dropdown-content {
   display: none;

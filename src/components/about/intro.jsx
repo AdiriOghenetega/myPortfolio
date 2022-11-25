@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import { AiOutlineHtml5 } from "react-icons/ai";
 import {IoLogoCss3,IoLogoJavascript,IoLogoReact } from "react-icons/io5";
+import { SiRedux } from "react-icons/si";
 import "./intro.css"
 
 const Intro = () => {
@@ -28,6 +29,10 @@ const Intro = () => {
           <div className="react">
           <IoLogoReact size="25" />
           <h3>REACTJS</h3>
+          </div>
+          <div className="redux">
+          <SiRedux size="25" />
+          <h3>REDUX</h3>
           </div>
         </div>
 <Link to="/components/about/about"><button>More about me...</button></Link>
