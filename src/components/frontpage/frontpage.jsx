@@ -4,8 +4,9 @@ import "./frontpage.css"
 
 const Frontpage = () => {
   return (
+    <>
+<div style={{width: "100%",padding:"0.5em",color:"gold",border:"1px solid",borderLeft:"none",borderRight:"none"}}><marquee direction="right" behavior="scroll">Nice to meet you</marquee></div>
     <div className="frontpage__container">
-    
     <div className="frontpage__fading-text">
     <p id='head1' className='header'>Hi</p>
 <p id='head2' className='header'>I'm Adiri Oghenetega</p>
@@ -14,6 +15,7 @@ const Frontpage = () => {
 <p id='head5' className='header'>Here are a few of the past projects I've worked on... </p></div>
         <Intro />
     </div>
+    </>
   )
 }
 

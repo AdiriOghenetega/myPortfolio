@@ -53,7 +53,14 @@ const Tools = () => {
         giturl="https://github.com/AdiriOghenetega/Image-gallery-slider.git"
         id="galleryapp"
          />
-        
+        <Projects
+        name="Digital business card"
+        description = "Create a Digital business card .Fill a form and click create , the app creates a digital business card for you. Gives access to contact info and bio ,contains links to social media handles, as well as link to github repository.Code written with reactjs and designed with css"
+        media="../../../videos/DigitalbusinessCard-sitereview.mp4"
+        url="https://digitalcard100.netlify.app/"
+        giturl="https://github.com/AdiriOghenetega/Digital-business-card.git"
+        id="digitalbusinesscard"
+         />
     </div>
   )
 }

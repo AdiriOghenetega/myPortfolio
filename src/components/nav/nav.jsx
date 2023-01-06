@@ -34,15 +34,15 @@ const Navbar = () => {
   },
    { name:"Gallery app",
   src: "galleryapp"
+  }, 
+  {name:"Digital business card",
+  src: "digitalbusinesscard"
   }
   ]);
   const [websiteList, setWebsiteList] = useState([
-    {name:"Green Life",
-  src:"greenlife"
-  },
-    {name:"Digital business card",
-  src: "digitalbusinesscard"
-  },
+  //   {name:"Green Life",
+  // src:"greenlife"
+  // },
     {name:"Hcue-Restaurant",
   src:"hcuerestaurant"
   },
@@ -146,12 +146,13 @@ window.onclick = function(event) {
   return (
     <nav>
       <div className="navbar__container">
+      
       <div className="navbar__clock">
         <Clock />
       </div>
       <div className="navbar__links">
         <div  className="dropdown">
-          <button className="dropdown__button" name="games" onMouseDown={handleShowNavDropdown} >Projects</button>
+          <button className="dropdown__button" name="games" onMouseDown={handleShowNavDropdown} title="my projects" >Projects</button>
           <div className={`dropdown-content rotate-center `}>
           <Link name="games" to="/components/games/games">Games</Link>
           <Link name="tools" to="/components/tools/tools">Tools</Link>
@@ -159,12 +160,12 @@ window.onclick = function(event) {
           </div>
         </div>
         <div className="dropdown">
-          <Link to="/components/contact/contact">Contact</Link>
+          <Link to="/components/contact/contact" title="contact me">Contact</Link>
         </div>
         <div className="dropdown">
-          <Link to="/components/about/about">About</Link>
+          <Link to="/components/about/about" title="more about me">About</Link>
         </div>
-        <div className="dropdown">
+        <div className="dropdown" title="home">
           <Link to="/">
             <FcHome size="25px" />
           </Link>

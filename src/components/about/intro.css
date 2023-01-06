@@ -76,6 +76,25 @@
 .redux :nth-child(1){
     color: rgb(122,84,188);
 }
+.chakra{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.chakra :nth-child(1){
+    color: rgb(41,185,173);
+}
+.next{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.next :nth-child(1){
+    color: black;
+    background-color: white;
+}
 
 .intro__writeup a{
     color: gold;

@@ -2,7 +2,9 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import { AiOutlineHtml5 } from "react-icons/ai";
 import {IoLogoCss3,IoLogoJavascript,IoLogoReact } from "react-icons/io5";
-import { SiRedux } from "react-icons/si";
+import { SiRedux, SiChakraui } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 import "./intro.css"
 
 const Intro = () => {
@@ -22,6 +24,10 @@ const Intro = () => {
           <IoLogoCss3 size="25" />
           <h3>CSS</h3>
           </div>
+          <div className="chakra">
+          <SiChakraui size="25" />
+          <h3>Chakra UI</h3>
+          </div>
           <div className="js">
           <IoLogoJavascript size="25" />
           <h3>JAVASCRIPT</h3>
@@ -34,8 +40,12 @@ const Intro = () => {
           <SiRedux size="25" />
           <h3>REDUX</h3>
           </div>
+          <div className="next">
+          <TbBrandNextjs size="25" />
+          <h3>NEXTJS</h3>
+          </div>
         </div>
-<Link to="/components/about/about"><button>More about me...</button></Link>
+<Link to="/components/about/about"><button title="get to know me">More about me...</button></Link>
 
     </div>
 
